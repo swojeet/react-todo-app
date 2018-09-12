@@ -33,12 +33,13 @@ class TodoInput extends React.Component {
           value={this.state.value}
           name="todo_name"
           onChange={this.handleChange}
+          placeholder="Jot something down"
         />
         <button
           className="btn btn-primary"
           onClick={() => this.addTodo(this.state.value)}
         >
-          Submit
+          Add
         </button>
       </div>
     );

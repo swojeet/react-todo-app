@@ -9,3 +9,7 @@
   border: 5px solid rgba(73, 204, 249, 1);
   padding: 20px;
 }
+
+.app_title {
+  font-family: "Courier New", Courier, monospace;
+}
