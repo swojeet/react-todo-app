@@ -32,9 +32,8 @@ class App extends Component {
   }
 
   removeTodo(id) {
-    // let todos = this.state.todos.slice();
     this.setState({
-      todos: this.state.todos.filter((todo, index) => todo.id !== id)
+      todos: this.state.todos.filter(todo => todo.id !== id)
     });
   }
 
@@ -43,7 +42,7 @@ class App extends Component {
       <div className="App">
         <div className="todo-wrapper">
           <Header />
-          <TodoInput todoText="" addTodo={this.addTodo} />
+          <TodoInput addTodo={this.addTodo} />
           <ul>
             {this.state.todos.map(todo => {
               return (
